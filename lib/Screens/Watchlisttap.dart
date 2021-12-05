@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
-class Watchlisttap extends StatelessWidget{
+class WatchlistTap extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      color: Colors.red,
+    );
   }
 }

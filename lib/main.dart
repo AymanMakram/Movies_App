@@ -19,8 +19,6 @@ class MyApp extends StatelessWidget{
       title: 'Movie App',
       theme: ThemeData(
           primaryColor: MyThemeData.primarycolor,
-          progressIndicatorTheme:
-          ProgressIndicatorThemeData (color: MyThemeData.CircularProgressIndicator)
       ),
       routes: {
         Homepage.routeName: (buildContext)=> Homepage(),

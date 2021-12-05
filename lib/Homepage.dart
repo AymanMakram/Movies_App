@@ -15,10 +15,15 @@ class Homepage extends StatefulWidget{
 
 class _HomepageState extends State<Homepage> {
   int currentpage = 0;
-
+  List<Widget> tabs = [
+    HomeTap(),
+    SearchTap(),
+    BrowseTap(),
+    WatchlistTap(),
+  ];
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color.fromRGBO(18, 19, 18, 1.0),
+        backgroundColor: Colors.transparent,
         bottomNavigationBar:
         Theme(
           data: Theme.of(context).copyWith(
@@ -52,22 +57,23 @@ class _HomepageState extends State<Homepage> {
             ],
 
           ),
-        )
+        ),
+      body: tabs[currentpage],
     );
   }
 
   Widget getcurrentpage() {
     if (currentpage == 0) {
-      return Hometap();
+      return HomeTap();
     }
     else if (currentpage == 1) {
-      return Searchtap();
+      return SearchTap();
     }
     else if (currentpage == 2) {
-      return Browsetap();
+      return BrowseTap();
     }
     else  {
-      return Watchlisttap();
+      return WatchlistTap();
     }
   }
 

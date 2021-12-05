@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
-class Searchtap extends StatelessWidget{
+class SearchTap extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      color: Colors.yellow,
+    );
   }
 }

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
-class Browsetap extends StatelessWidget{
+class BrowseTap extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      color: Colors.orangeAccent,
+    );
   }
 }
